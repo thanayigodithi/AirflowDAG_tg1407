@@ -73,4 +73,3 @@ with DAG("user_processing", start_date = datetime(2022,1,1),
     )
 
     create_table >> is_api_available >> extract_user >> process_user >> store_user
-
